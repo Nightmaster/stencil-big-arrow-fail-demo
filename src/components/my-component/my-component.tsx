@@ -5,35 +5,35 @@ import { Component, ComponentInterface, h } from '@stencil/core'
   shadow: true,
 })
 export class MyComponent implements ComponentInterface {
-  componentWillLoad(): void {
+  componentWillLoad = (): void => {
     this.log('componentWillLoad')
   }
 
-  connectedCallback(): void {
+  connectedCallback = (): void => {
     this.log('connectedCallback')
   }
 
-  componentWillRender(): void {
+  componentWillRender = (): void => {
     this.log('componentWillRender')
   }
 
-  componentDidRender(): void {
+  componentDidRender = (): void => {
     this.log('componentDidRender')
   }
 
-  componentDidLoad(): void {
+  componentDidLoad = (): void => {
     this.log('componentDidLoad')
   }
 
-  componentWillUpdate(): void {
+  componentWillUpdate = (): void => {
     this.log('componentWillUpdate')
   }
 
-  componentDidUpdate(): void {
+  componentDidUpdate = (): void => {
     this.log('componentDidUpdate')
   }
 
-  render(): HTMLElement[] {
+  render = (): HTMLElement[] => {
     this.log('render')
 
     return [
